@@ -5,5 +5,15 @@
  "amstradcpc",
  "assets",
  "fba",
- "index.html"
+ "gba",
+ "gbc",
+ "index.html",
+ "mame-libretro",
+ "mastersystem",
+ "megadrive",
+ "n64",
+ "neogeo",
+ "pcengine",
+ "psp",
+ "psx"
 ]

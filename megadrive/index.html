@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mega Drive · Bartop Arcade</title>
+<meta name="description" content="2 juegos de Mega Drive en mi bartop, con sus controles y un longplay.">
+<meta name="theme-color" content="#0b0d12">
+<link rel="canonical" href="https://vicente-priego-aviles.github.io/bartop-arcade/megadrive/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mega Drive · Bartop Arcade">
+<meta property="og:description" content="2 juegos de Mega Drive en mi bartop, con sus controles y un longplay.">
+<meta property="og:url" content="https://vicente-priego-aviles.github.io/bartop-arcade/megadrive/">
+
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="../assets/estilo.css">
+<script src="../assets/web.js" defer></script>
+</head>
+<body>
+<a class="oculto" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="../index.html"><svg class="marca-icono" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="6" width="28" height="20" rx="5" fill="#171b25" stroke="#4d8dff" stroke-width="2"/><circle cx="10" cy="16" r="4" fill="#ffd166"/><circle cx="20" cy="13" r="2.4" fill="#4d8dff"/><circle cx="25" cy="13" r="2.4" fill="#4d8dff"/><circle cx="20" cy="19.5" r="2.4" fill="#4d8dff"/><circle cx="25" cy="19.5" r="2.4" fill="#ff4d5e"/></svg><span>BARTOP <b>ARCADE</b></span></a>
+    <nav class="nav" aria-label="Principal"><a href="../index.html">Juegos</a></nav>
+  </div>
+</header>
+<main id="contenido">
+  <div class="contenedor">
+
+<nav class="migas" aria-label="Ruta"><ol><li><a href="../index.html">Inicio</a></li><li aria-current="page">Mega Drive</li></ol></nav>
+<div class="cab-sistema"><span class="placa-logo"><img src="../assets/logos/megadrive.png" alt=""></span><div><h1>Mega Drive</h1><p>2 juegos, 0 probados en la bartop</p></div></div>
+<div class="filtros">
+  <div class="buscador"><label class="oculto" for="buscar">Buscar juego</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="buscar" type="search" placeholder="Buscar por nombre o desarrollador" autocomplete="off" enterkeyhint="search"></div>
+  <div class="chips-grupo" data-filtro="genero" role="group" aria-label="Género"><span>Género</span><button type="button" class="chip" data-valor="" aria-pressed="true">Todos</button><button type="button" class="chip" data-valor="Plataformas" aria-pressed="false">Plataformas</button></div><div class="chips-grupo" data-filtro="jugadores" role="group" aria-label="Jugadores"><span>Jugadores</span><button type="button" class="chip" data-valor="" aria-pressed="true">Todos</button><button type="button" class="chip" data-valor="1" aria-pressed="false">1</button></div><div class="chips-grupo" data-filtro="decada" role="group" aria-label="Década"><span>Década</span><button type="button" class="chip" data-valor="" aria-pressed="true">Todos</button><button type="button" class="chip" data-valor="1990" aria-pressed="false">Años 90</button></div>
+</div>
+<p class="resultado" id="resultado" aria-live="polite">2 juegos</p>
+<ul class="juegos" data-filtrable><li data-nombre="Animaniacs" data-desarrollador="Konami" data-genero="Plataformas" data-jugadores="1" data-decada="1990"><a class="juego" href="animaniacs/index.html"><div class="juego-img"><img src="../assets/portadas/megadrive/animaniacs.webp" alt="" width="135" height="190" loading="lazy" decoding="async"></div><div class="juego-texto"><span class="juego-nombre">Animaniacs</span><span class="juego-meta">1994 · Konami</span><span class="sin-probar">Sin probar</span></div></a></li><li data-nombre="Asterix and the Power of the Gods" data-desarrollador="Core Design" data-genero="Plataformas" data-jugadores="?" data-decada="1990"><a class="juego" href="asterix-and-the-power-of-the-gods/index.html"><div class="juego-img"><img src="../assets/portadas/megadrive/asterix-and-the-power-of-the-gods.webp" alt="" width="285" height="400" loading="lazy" decoding="async"></div><div class="juego-texto"><span class="juego-nombre">Asterix and the Power of the Gods</span><span class="juego-meta">1995 · Core Design</span><span class="sin-probar">Sin probar</span></div></a></li></ul>
+<p class="sin-resultados" id="sin-resultados" hidden>No hay juegos con esos filtros.</p>
+  </div>
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <p>Proyecto personal: una bartop con Raspberry Pi 3 y RetroPie, con panel para dos jugadores.</p>
+    <p>Las portadas, nombres y marcas de los juegos pertenecen a sus propietarios. Esta web no ofrece ROMs.</p>
+  </div>
+</footer>
+</body>
+</html>
