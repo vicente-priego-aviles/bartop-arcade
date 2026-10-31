@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" width="760" height="760" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
-<rect width="760" height="760" rx="16" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 860" width="760" height="860" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="760" height="860" rx="16" fill="#ffffff"/>
 <text x="40" y="44" font-size="22" font-weight="700" fill="#1d1d1f" text-anchor="start">Amstrad CPC · lr-caprice32 · jugador 1</text>
 <text x="40" y="68" font-size="14" font-weight="400" fill="#5f6368" text-anchor="start">Dispositivo «Amstrad Joystick» · conjunto 2026-10-25-amstradcpc · el jugador 2 es igual</text>
 <rect x="20" y="90" width="720" height="420" rx="14" fill="#26282e" stroke="#41454e" stroke-width="1.5"/>
 <text x="380" y="114" font-size="12" font-weight="700" fill="#a9afb8" text-anchor="middle">PANEL DE MANDOS (vista desde delante)</text>
-<circle cx="82" cy="175" r="34" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
-<circle cx="82" cy="148" r="5" fill="#1d1d1f"/>
-<path d="M74,165 Q74,155 82,155 Q90,155 90,165 Z" fill="#1d1d1f"/>
-<text x="82" y="184" font-size="15" font-weight="800" fill="#1d1d1f" text-anchor="middle">1P</text>
-<text x="82" y="197" font-size="9" font-weight="600" fill="#5f6368" text-anchor="middle">Start</text>
-<text x="134" y="181" font-size="14" font-weight="700" fill="#ffd166" text-anchor="start">ENTER</text>
+<circle cx="400" cy="175" r="34" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+<circle cx="400" cy="148" r="5" fill="#1d1d1f"/>
+<path d="M392,165 Q392,155 400,155 Q408,155 408,165 Z" fill="#1d1d1f"/>
+<text x="400" y="184" font-size="15" font-weight="800" fill="#1d1d1f" text-anchor="middle">1P</text>
+<text x="400" y="197" font-size="9" font-weight="600" fill="#5f6368" text-anchor="middle">Start</text>
+<text x="400" y="231" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">ENTER</text>
 <circle cx="660" cy="175" r="34" fill="#d62828" stroke="#d62828" stroke-width="4"/>
 <text x="660" y="177" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">ESC</text>
 <text x="660" y="195" font-size="11" font-weight="600" fill="#ffe3e3" text-anchor="middle">R2</text>
@@ -48,7 +48,46 @@
 <text x="290" y="609" font-size="12" font-weight="400" fill="#a9afb8" text-anchor="end">Select · Coin + botón = atajo</text>
 <text x="470" y="589" font-size="14" font-weight="700" fill="#ffd166" text-anchor="start">Teclado virtual:</text>
 <text x="470" y="609" font-size="12" font-weight="400" fill="#a9afb8" text-anchor="start">cambia ratón / joystick</text>
-<text x="40" y="706" font-size="14" font-weight="700" fill="#1d1d1f" text-anchor="start">Atajos con Coin</text>
-<text x="40" y="728" font-size="13" font-weight="400" fill="#3c4043" text-anchor="start">Coin + Y menú RetroArch · Coin + X reiniciar · Coin + R guardar estado · Coin + L cargar estado · Coin + ESC salir</text>
-<text x="40" y="750" font-size="13" font-weight="400" fill="#3c4043" text-anchor="start">Con el teclado virtual abierto (Y): el joystick mueve el cursor y B (Fuego 1) pulsa la tecla</text>
+<text x="40" y="696" font-size="15" font-weight="700" fill="#1d1d1f" text-anchor="start">Atajos: mantén pulsado Coin y pulsa…</text>
+<rect x="20" y="710" width="132" height="96" rx="12" fill="#f1f3f4" stroke="#dadce0" stroke-width="1.5"/>
+<rect x="40.0" y="724" width="30" height="38" rx="3" fill="#d62828" stroke="#8f1414" stroke-width="1.5"/>
+<rect x="45.0" y="729" width="20" height="28" rx="2" fill="#ffffff"/>
+<text x="55.0" y="747" font-size="7" font-weight="800" fill="#d62828" text-anchor="middle">COIN</text>
+<text x="86.0" y="750" font-size="18" font-weight="800" fill="#5f6368" text-anchor="middle">+</text>
+<circle cx="116.0" cy="743" r="19" fill="#1f5fd1" stroke="#ffffff" stroke-width="2"/>
+<text x="116.0" y="749" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">Y</text>
+<text x="86.0" y="788" font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="middle">Menú RetroArch</text>
+<rect x="167" y="710" width="132" height="96" rx="12" fill="#f1f3f4" stroke="#dadce0" stroke-width="1.5"/>
+<rect x="187.0" y="724" width="30" height="38" rx="3" fill="#d62828" stroke="#8f1414" stroke-width="1.5"/>
+<rect x="192.0" y="729" width="20" height="28" rx="2" fill="#ffffff"/>
+<text x="202.0" y="747" font-size="7" font-weight="800" fill="#d62828" text-anchor="middle">COIN</text>
+<text x="233.0" y="750" font-size="18" font-weight="800" fill="#5f6368" text-anchor="middle">+</text>
+<circle cx="263.0" cy="743" r="19" fill="#1f5fd1" stroke="#ffffff" stroke-width="2"/>
+<text x="263.0" y="749" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">X</text>
+<text x="233.0" y="788" font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="middle">Reiniciar</text>
+<rect x="314" y="710" width="132" height="96" rx="12" fill="#f1f3f4" stroke="#dadce0" stroke-width="1.5"/>
+<rect x="334.0" y="724" width="30" height="38" rx="3" fill="#d62828" stroke="#8f1414" stroke-width="1.5"/>
+<rect x="339.0" y="729" width="20" height="28" rx="2" fill="#ffffff"/>
+<text x="349.0" y="747" font-size="7" font-weight="800" fill="#d62828" text-anchor="middle">COIN</text>
+<text x="380.0" y="750" font-size="18" font-weight="800" fill="#5f6368" text-anchor="middle">+</text>
+<circle cx="410.0" cy="743" r="19" fill="#1f5fd1" stroke="#ffffff" stroke-width="2"/>
+<text x="410.0" y="749" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
+<text x="380.0" y="788" font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="middle">Guardar estado</text>
+<rect x="461" y="710" width="132" height="96" rx="12" fill="#f1f3f4" stroke="#dadce0" stroke-width="1.5"/>
+<rect x="481.0" y="724" width="30" height="38" rx="3" fill="#d62828" stroke="#8f1414" stroke-width="1.5"/>
+<rect x="486.0" y="729" width="20" height="28" rx="2" fill="#ffffff"/>
+<text x="496.0" y="747" font-size="7" font-weight="800" fill="#d62828" text-anchor="middle">COIN</text>
+<text x="527.0" y="750" font-size="18" font-weight="800" fill="#5f6368" text-anchor="middle">+</text>
+<circle cx="557.0" cy="743" r="19" fill="#1f5fd1" stroke="#ffffff" stroke-width="2"/>
+<text x="557.0" y="749" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">L</text>
+<text x="527.0" y="788" font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="middle">Cargar estado</text>
+<rect x="608" y="710" width="132" height="96" rx="12" fill="#fdecec" stroke="#d62828" stroke-width="2"/>
+<rect x="628.0" y="724" width="30" height="38" rx="3" fill="#d62828" stroke="#8f1414" stroke-width="1.5"/>
+<rect x="633.0" y="729" width="20" height="28" rx="2" fill="#ffffff"/>
+<text x="643.0" y="747" font-size="7" font-weight="800" fill="#d62828" text-anchor="middle">COIN</text>
+<text x="674.0" y="750" font-size="18" font-weight="800" fill="#5f6368" text-anchor="middle">+</text>
+<circle cx="704.0" cy="743" r="19" fill="#d62828" stroke="#ffffff" stroke-width="2"/>
+<text x="704.0" y="747" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">ESC</text>
+<text x="674.0" y="788" font-size="13" font-weight="700" fill="#d62828" text-anchor="middle">Salir del juego</text>
+<text x="40" y="836" font-size="13" font-weight="400" fill="#3c4043" text-anchor="start">Con el teclado virtual abierto (Y): el joystick mueve el cursor y B (Fuego 1) pulsa la tecla</text>
 </svg>
