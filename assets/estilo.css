@@ -239,6 +239,28 @@ h2 { font-size: clamp(1.15rem, 1.05rem + .5vw, 1.4rem); font-weight: 750; }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video-info { font-size: .9rem; color: var(--texto-2); margin: 12px 0 0; }
 .video-info a { word-break: break-word; }
+.guia { color: #d3d8e3; }
+.guia h3 { font-size: 1rem; margin: 20px 0 8px; color: var(--texto); }
+.guia p { margin: 0 0 .8em; max-width: 75ch; }
+.guia ul, .guia ol { margin: 0 0 1em; padding-left: 1.3em; max-width: 75ch; }
+.guia li { margin: .25em 0; }
+.guia li ul { margin: .25em 0 0; }
+.guia strong { color: var(--texto); }
+.guia em { color: var(--texto-3); }
+.tabla-scroll { overflow-x: auto; margin: 0 0 1em; }
+.tabla-guia { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.tabla-guia th {
+  text-align: left; font: 400 .62rem/1.4 var(--pixel); letter-spacing: .06em;
+  color: var(--texto-3); text-transform: uppercase; padding: 0 10px 10px; border-bottom: 1px solid var(--borde);
+}
+.tabla-guia td { padding: 8px 10px; border-bottom: 1px solid var(--borde); vertical-align: top; }
+.tabla-guia tr:last-child td { border-bottom: 0; }
+.tabla-guia td:first-child { white-space: nowrap; color: var(--texto); }
+.aviso-guia { background: rgb(255 209 102 / .08); border: 1px solid rgb(255 209 102 / .45); border-radius: var(--radio-s); padding: 10px 14px; margin: 0 0 1em; }
+.aviso-guia strong { color: var(--amarillo); display: block; margin-bottom: 4px; }
+.aviso-guia p { margin: 0; }
+.guia-fuentes { font-size: .8rem; color: var(--texto-3); margin-top: 14px; }
+.guia-fuentes a { word-break: break-word; }
 .capitulos-titulo { font-size: 1rem; margin: 22px 0 4px; }
 .capitulos-ayuda { font-size: .85rem; color: var(--texto-3); margin: 0 0 8px; }
 .tabla-capitulos { width: 100%; border-collapse: collapse; font-size: .9rem; }
