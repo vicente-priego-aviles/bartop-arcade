@@ -3,6 +3,75 @@
 (() => {
   document.documentElement.classList.remove("no-js");
 
+  // ── Cabecera: menú de sistemas, menú del móvil y buscador de juegos ──
+  const cab = document.querySelector(".cabecera");
+  const botonSis = document.querySelector(".nav-sis-boton");
+  const panelSis = document.getElementById("panel-sis");
+  const botonMenu = document.querySelector(".nav-menu");
+  const cerrarSis = () => { if (panelSis) { panelSis.hidden = true; botonSis.setAttribute("aria-expanded", "false"); } };
+  if (botonSis && panelSis) {
+    botonSis.addEventListener("click", (e) => {
+      if (cab.classList.contains("abierto")) return; // en el móvil, el enlace lleva a la portada
+      e.preventDefault();
+      const abrir = panelSis.hidden;
+      panelSis.hidden = !abrir;
+      botonSis.setAttribute("aria-expanded", String(abrir));
+    });
+    document.addEventListener("click", (e) => { if (!e.target.closest(".nav-sis")) cerrarSis(); });
+  }
+  if (botonMenu) {
+    botonMenu.addEventListener("click", () => {
+      const abierto = cab.classList.toggle("abierto");
+      botonMenu.setAttribute("aria-expanded", String(abierto));
+      document.body.classList.toggle("menu-abierto", abierto);
+    });
+  }
+
+  const dlg = document.getElementById("buscador-global");
+  const base = document.body.dataset.base || "";
+  let juegosIdx = null;
+  const normal = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const abrirBuscador = async () => {
+    if (!dlg) return;
+    cerrarSis();
+    dlg.hidden = false;
+    document.body.classList.add("buscando");
+    const campo = dlg.querySelector("input");
+    campo.value = "";
+    campo.focus();
+    pintar("");
+    if (!juegosIdx) {
+      try { juegosIdx = await (await fetch(base + "assets/juegos.json")).json(); } catch { juegosIdx = []; }
+      pintar(campo.value);
+    }
+  };
+  const cerrarBuscador = () => { if (dlg) { dlg.hidden = true; document.body.classList.remove("buscando"); } };
+  const pintar = (q) => {
+    const lista = dlg.querySelector(".bg-resultados");
+    const vacio = dlg.querySelector(".bg-vacio");
+    const n = normal(q.trim());
+    if (!juegosIdx || !n) { lista.innerHTML = ""; vacio.hidden = true; return; }
+    const res = juegosIdx.filter((j) => normal(j.n).includes(n)).slice(0, 12);
+    lista.innerHTML = res.map((j) =>
+      `<li><a href="${base}${j.u}">${j.i ? `<img src="${base}${j.i}" alt="" loading="lazy">` : '<span class="bg-sin-img"></span>'}` +
+      `<span><b>${j.n.replace(/[<&]/g, (c) => c === "<" ? "&lt;" : "&amp;")}</b><small>${j.s}</small></span></a></li>`).join("");
+    vacio.hidden = res.length > 0;
+  };
+  document.querySelectorAll(".nav-buscar").forEach((b) => b.addEventListener("click", abrirBuscador));
+  if (dlg) {
+    const campo = dlg.querySelector("input");
+    campo.addEventListener("input", () => pintar(campo.value));
+    campo.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") { const a = dlg.querySelector(".bg-resultados a"); if (a) location.href = a.href; }
+    });
+    dlg.querySelector(".bg-cerrar").addEventListener("click", cerrarBuscador);
+    dlg.addEventListener("click", (e) => { if (e.target === dlg) cerrarBuscador(); });
+  }
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { cerrarBuscador(); cerrarSis(); }
+    if (e.key === "/" && dlg && dlg.hidden && !/input|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); abrirBuscador(); }
+  });
+
   // Vídeo de YouTube: se carga solo al pulsar (más rápido y sin cookies hasta entonces).
   document.querySelectorAll("a.video[data-id]").forEach((a) => {
     a.addEventListener("click", (e) => {
