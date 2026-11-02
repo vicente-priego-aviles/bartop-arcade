@@ -476,3 +476,25 @@ details.guia-fuentes a { word-break: break-word; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ── La bartop ─────────────────────────────────────── */
+.bartop-portada .lema p { margin: 0 0 .6em; }
+.bartop-cajas { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; padding-bottom: 8px; }
+.bartop-caja { min-width: 0; }
+.bartop-caja h2 { margin-top: 0; }
+.bartop-caja h3 { margin: 1.4em 0 .5em; }
+.bartop-caja p, .bartop-caja li { color: #d3d8e3; }
+.foto-bartop { margin: 14px 0; }
+.foto-bartop a { display: block; border-radius: var(--radio-s); overflow: hidden; }
+.foto-bartop img { width: 100%; height: auto; }
+.foto-bartop img[src$=".svg"] { background: #fff; }
+.foto-media { display: inline-block; width: calc(50% - 8px); vertical-align: top; }
+.foto-media + .foto-media { margin-left: 12px; }
+.esquema-panel {
+  overflow-x: auto; background: #05070b; border: 1px solid var(--borde); border-radius: var(--radio-s);
+  padding: 14px 16px; font-size: .82rem; line-height: 1.45; color: #cfe0ff;
+}
+@media (max-width: 560px) {
+  .foto-media { width: 100%; }
+  .foto-media + .foto-media { margin-left: 0; }
+}
