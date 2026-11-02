@@ -19,6 +19,22 @@
     });
   });
 
+  // Capítulos: un ▶ del mismo vídeo lo carga (o lo recarga) desde ese segundo.
+  document.querySelectorAll("a.salto[data-t]").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const sec = a.closest("section");
+      const enlace = sec && sec.querySelector("a.video[data-id]");
+      const iframe = sec && sec.querySelector("div.video iframe");
+      if (!enlace && !iframe) return;
+      e.preventDefault();
+      if (enlace) enlace.click();
+      const f = sec.querySelector("div.video iframe");
+      const id = f.src.match(/embed\/([^?]+)/)[1];
+      f.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&start=${a.dataset.t}`;
+      f.closest(".video").scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  });
+
   // Buscador y filtros de la página de un sistema.
   const lista = document.querySelector(".juegos[data-filtrable]");
   if (!lista) return;
