@@ -367,6 +367,9 @@ details.guia-fuentes a { word-break: break-word; }
 .guia-fuentes { font-size: .8rem; color: var(--texto-3); margin-top: 14px; }
 .guia-fuentes a { word-break: break-word; }
 .capitulos-titulo { font-size: 1rem; margin: 22px 0 4px; }
+.capitulos-lista { margin: 0 0 12px; padding-left: 1.2em; font-size: .9rem; color: var(--texto-2); }
+.capitulos-lista li { margin: .35em 0; }
+.capitulos-lista a { word-break: break-word; }
 .capitulos-texto { font-size: .88rem; color: var(--texto-2); margin: 0 0 10px; }
 .capitulos-ayuda { font-size: .85rem; color: var(--texto-3); margin: 0 0 8px; }
 .anterior-siguiente { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: clamp(28px, 5vw, 48px); }
