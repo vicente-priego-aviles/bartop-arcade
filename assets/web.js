@@ -35,6 +35,35 @@
     });
   });
 
+  // Final oculto: se muestra al pulsar el botón.
+  document.querySelectorAll(".spoiler-boton").forEach((b) => {
+    b.addEventListener("click", () => {
+      b.parentElement.classList.add("visible");
+      b.remove();
+    });
+  });
+
+  // Índice de la página: marca el apartado que se está viendo.
+  const enlacesIndice = [...document.querySelectorAll(".indice a")];
+  if (enlacesIndice.length && "IntersectionObserver" in window) {
+    const ids = [...new Set(enlacesIndice.map((a) => a.hash.slice(1)))];
+    const vistos = new Map();
+    const marcar = () => {
+      const actual = ids.find((id) => vistos.get(id));
+      enlacesIndice.forEach((a) => a.classList.toggle("activo", a.hash.slice(1) === actual));
+      const activo = document.querySelector(".indice-movil a.activo");
+      if (activo) activo.scrollIntoView({ block: "nearest", inline: "center" });
+    };
+    const obs = new IntersectionObserver((entradas) => {
+      entradas.forEach((en) => vistos.set(en.target.querySelector("h2").id, en.isIntersecting));
+      marcar();
+    }, { rootMargin: "-120px 0px -55% 0px" });
+    ids.forEach((id) => {
+      const h = document.getElementById(id);
+      if (h) obs.observe(h.closest("section"));
+    });
+  }
+
   // Buscador y filtros de la página de un sistema.
   const lista = document.querySelector(".juegos[data-filtrable]");
   if (!lista) return;
