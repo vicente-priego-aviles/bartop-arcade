@@ -247,15 +247,40 @@ h2 { font-size: clamp(1.15rem, 1.05rem + .5vw, 1.4rem); font-weight: 750; }
 .guia li ul { margin: .25em 0 0; }
 .guia strong { color: var(--texto); }
 .guia em { color: var(--texto-3); }
-.tabla-scroll { overflow-x: auto; margin: 0 0 1em; }
+.tabla-scroll { overflow-x: auto; margin: 0 0 1.2em; border: 1px solid var(--borde); border-radius: var(--radio-s); background: var(--fondo-2); }
 .tabla-guia { width: 100%; border-collapse: collapse; font-size: .92rem; }
-.tabla-guia th {
-  text-align: left; font: 400 .62rem/1.4 var(--pixel); letter-spacing: .06em;
-  color: var(--texto-3); text-transform: uppercase; padding: 0 10px 10px; border-bottom: 1px solid var(--borde);
+.tabla-guia thead th {
+  text-align: left; font: 600 .72rem/1.3 var(--sans); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--texto-2); background: var(--tarjeta-2); padding: 11px 14px; border-bottom: 1px solid var(--borde);
 }
-.tabla-guia td { padding: 8px 10px; border-bottom: 1px solid var(--borde); vertical-align: top; }
-.tabla-guia tr:last-child td { border-bottom: 0; }
-.tabla-guia td:first-child { white-space: nowrap; color: var(--texto); }
+.tabla-guia td, .tabla-guia tbody th { padding: 11px 14px; border-bottom: 1px solid var(--borde); vertical-align: top; text-align: left; }
+.tabla-guia tbody tr:last-child td, .tabla-guia tbody tr:last-child th { border-bottom: 0; }
+.tabla-guia tbody tr:nth-child(even) { background: rgb(255 255 255 / .018); }
+.tabla-guia tbody tr { transition: background .15s; }
+.tabla-guia tbody tr:hover { background: rgb(77 141 255 / .07); }
+.tabla-guia td:first-child, .tabla-guia tbody th { white-space: nowrap; color: var(--texto); font-weight: 600; }
+.tabla-guia code { font-size: .85em; }
+.tabla-chips td:first-child, .tabla-chips tbody th { width: 1%; }
+.chips-celda { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip-nivel {
+  display: inline-flex; align-items: center; gap: 8px; padding: 4px 6px 4px 11px; border-radius: 999px;
+  background: var(--tarjeta-2); border: 1px solid var(--borde); color: var(--texto); font-size: .84rem; line-height: 1.3;
+}
+.chip-nivel:not(:has(a)) { padding-right: 11px; }
+.chip-nivel strong { color: inherit; font-weight: 600; }
+.chip-jefe { border-color: rgb(255 77 94 / .55); background: rgb(255 77 94 / .1); color: #ffd3d8; }
+.chip-nivel a {
+  font-variant-numeric: tabular-nums; font-size: .78rem; font-weight: 600; text-decoration: none; white-space: nowrap;
+  color: #fff; background: var(--azul-osc); padding: 2px 8px; border-radius: 999px; transition: background .15s;
+}
+.chip-nivel a:hover { background: var(--azul); }
+.chip-jefe a { background: #b3263a; }
+.chip-jefe a:hover { background: var(--rojo); }
+@media (max-width: 560px) {
+  .tabla-chips thead { display: none; }
+  .tabla-chips tr, .tabla-chips td, .tabla-chips tbody th { display: block; width: auto; }
+  .tabla-chips tbody th, .tabla-chips td:first-child { border-bottom: 0; padding-bottom: 4px; }
+}
 .aviso-guia { background: rgb(255 209 102 / .08); border: 1px solid rgb(255 209 102 / .45); border-radius: var(--radio-s); padding: 10px 14px; margin: 0 0 1em; }
 .aviso-guia strong { color: var(--amarillo); display: block; margin-bottom: 4px; }
 .aviso-guia p { margin: 0; }
@@ -263,14 +288,7 @@ h2 { font-size: clamp(1.15rem, 1.05rem + .5vw, 1.4rem); font-weight: 750; }
 .guia-fuentes a { word-break: break-word; }
 .capitulos-titulo { font-size: 1rem; margin: 22px 0 4px; }
 .capitulos-ayuda { font-size: .85rem; color: var(--texto-3); margin: 0 0 8px; }
-.tabla-capitulos { width: 100%; border-collapse: collapse; font-size: .9rem; }
-.tabla-capitulos th, .tabla-capitulos td { padding: 8px 10px; border-bottom: 1px solid var(--borde); text-align: left; vertical-align: top; line-height: 1.9; }
-.tabla-capitulos tr:last-child th, .tabla-capitulos tr:last-child td { border-bottom: 0; }
-.tabla-capitulos th { width: 1%; white-space: nowrap; color: var(--texto-2); font-weight: 600; }
-.tabla-capitulos a { white-space: nowrap; text-decoration: none; }
-.tabla-capitulos strong { color: var(--rojo); }
-@media (max-width: 560px) { .tabla-capitulos th { white-space: normal; } }
-
+@media (max-width: 560px) { 
 .anterior-siguiente { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: clamp(28px, 5vw, 48px); }
 .anterior-siguiente a {
   display: flex; flex-direction: column; gap: 2px; padding: 14px 16px;
