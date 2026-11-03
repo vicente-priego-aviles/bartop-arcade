@@ -498,3 +498,6 @@ details.guia-fuentes a { word-break: break-word; }
   .foto-media { width: 100%; }
   .foto-media + .foto-media { margin-left: 0; }
 }
+
+/* Mando original de la consola, debajo del diagrama del panel */
+.mando-original { margin-top: 18px; }
