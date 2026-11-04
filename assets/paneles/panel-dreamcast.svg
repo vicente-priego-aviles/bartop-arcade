@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 690" width="760" height="690" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="760" height="690" rx="16" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" font-weight="700" fill="#1d1d1f" text-anchor="start">Dreamcast · reicast · jugador 1</text>
+<text x="40" y="68" font-size="14" font-weight="400" fill="#5f6368" text-anchor="start">Lanzador propio (conjunto 2026-11-04-dreamcast-j2-cruceta) · el J2 igual, con 2P como Start</text>
+<rect x="20" y="90" width="720" height="420" rx="14" fill="#26282e" stroke="#41454e" stroke-width="1.5"/>
+<text x="380" y="114" font-size="12" font-weight="700" fill="#a9afb8" text-anchor="middle">PANEL DE MANDOS (vista desde delante)</text>
+<circle cx="400" cy="175" r="34" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+<circle cx="400" cy="148" r="5" fill="#1d1d1f"/>
+<path d="M392,165 Q392,155 400,155 Q408,155 408,165 Z" fill="#1d1d1f"/>
+<text x="400" y="184" font-size="15" font-weight="800" fill="#1d1d1f" text-anchor="middle">1P</text>
+<text x="400" y="197" font-size="9" font-weight="600" fill="#5f6368" text-anchor="middle">Start</text>
+<text x="400" y="231" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">Start</text>
+<circle cx="660" cy="175" r="34" fill="#d62828" stroke="#d62828" stroke-width="4"/>
+<text x="660" y="177" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">ESC</text>
+<text x="660" y="195" font-size="11" font-weight="600" fill="#ffe3e3" text-anchor="middle">R2</text>
+<text x="608" y="172" font-size="14" font-weight="700" fill="#ffd166" text-anchor="end">SALIR</text>
+<text x="608" y="190" font-size="11" font-weight="400" fill="#a9afb8" text-anchor="end">solo ESC, sin Coin</text>
+<circle cx="82" cy="330" r="34" fill="#5c5333" stroke="#5c5333" stroke-width="4"/>
+<text x="82" y="332" font-size="20" font-weight="700" fill="#a39a6b" text-anchor="middle">FLIP</text>
+<text x="82" y="350" font-size="11" font-weight="600" fill="#a39a6b" text-anchor="middle">L2</text>
+<text x="82" y="390" font-size="13" font-weight="700" fill="#6b7280" text-anchor="middle">—</text>
+<circle cx="50" cy="466" r="9" fill="#1f5fd1" stroke="#ffd166" stroke-width="3"/>
+<text x="68" y="471" font-size="12" font-weight="600" fill="#e8eaed" text-anchor="start">Borde amarillo: botón principal</text>
+<circle cx="50" cy="490" r="9" fill="#3a3d45" stroke="#4b4f58" stroke-width="2"/>
+<text x="68" y="495" font-size="12" font-weight="600" fill="#e8eaed" text-anchor="start">Gris: sin uso en este sistema</text>
+<circle cx="230" cy="330" r="52" fill="#3a3d45" stroke="#6b7280" stroke-width="3"/>
+<circle cx="230" cy="330" r="20" fill="#1f5fd1" stroke="#ffffff" stroke-width="1.5"/>
+<text x="230" y="410" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">Palanca analógica</text>
+<circle cx="400" cy="290" r="34" fill="#1f5fd1" stroke="#ffffff" stroke-width="4"/><text x="400" y="297" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Y</text><text x="400" y="346" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">X</text>
+<circle cx="530" cy="290" r="34" fill="#1f5fd1" stroke="#ffffff" stroke-width="4"/><text x="530" y="297" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">X</text><text x="530" y="346" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">Y</text>
+<circle cx="660" cy="290" r="34" fill="#1f5fd1" stroke="#ffffff" stroke-width="4"/><text x="660" y="297" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">L</text><text x="660" y="346" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">Gatillo izq.</text>
+<circle cx="400" cy="420" r="34" fill="#1f5fd1" stroke="#ffd166" stroke-width="5"/><text x="400" y="427" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">B</text><text x="400" y="476" font-size="14" font-weight="800" fill="#ffd166" text-anchor="middle">A</text>
+<circle cx="530" cy="420" r="34" fill="#1f5fd1" stroke="#ffffff" stroke-width="4"/><text x="530" y="427" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">A</text><text x="530" y="476" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">B</text>
+<circle cx="660" cy="420" r="34" fill="#1f5fd1" stroke="#ffffff" stroke-width="4"/><text x="660" y="427" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">R</text><text x="660" y="476" font-size="13" font-weight="700" fill="#ffd166" text-anchor="middle">Gatillo der.</text>
+<rect x="20" y="530" width="720" height="96" rx="12" fill="#fdecec" stroke="#d62828" stroke-width="2"/>
+<circle cx="80" cy="578" r="22" fill="#d62828" stroke="#ffffff" stroke-width="2"/>
+<text x="80" y="583" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">ESC</text>
+<text x="120" y="570" font-size="16" font-weight="700" fill="#1d1d1f" text-anchor="start">Sin atajos: este emulador no es RetroArch</text>
+<text x="120" y="594" font-size="13" font-weight="400" fill="#3c4043" text-anchor="start">ESC solo sale del juego · Coin no se usa · no hay guardar/cargar estado</text>
+<text x="40" y="664" font-size="13" font-weight="400" fill="#3c4043" text-anchor="start">En los juegos de naves (cruceta.txt) el joystick hace de cruceta · el J2 no tiene botón de salir</text>
+</svg>
