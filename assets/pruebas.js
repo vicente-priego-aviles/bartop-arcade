@@ -14,7 +14,9 @@
   // Página de inicio de Pruebas: cuántas hay hechas en cada sistema
   document.querySelectorAll(".pr-sis").forEach(function (a) {
     var datos = leer(a.dataset.sistema);
-    var hechas = Object.keys(datos).filter(function (k) { return datos[k].e; }).length;  // solo las marcadas
+    // tarjeta de una tanda: solo cuenta sus pruebas; tarjeta de sistema: todas las marcadas
+    var ids = a.dataset.ids ? a.dataset.ids.split(" ") : null;
+    var hechas = Object.keys(datos).filter(function (k) { return datos[k].e && (!ids || ids.indexOf(k) >= 0); }).length;
     var span = a.querySelector(".pr-sis-hechas");
     if (hechas && span) { span.hidden = false; span.textContent = hechas + " de " + a.dataset.total + " marcadas en este móvil"; }
   });
@@ -129,7 +131,9 @@
   });
   raiz.querySelector(".pr-borrar").addEventListener("click", function () {
     if (!confirm("¿Borrar todas las marcas y notas de " + raiz.dataset.nombre + " en este móvil?")) return;
-    datos = {}; guardar(sis, datos);
+    // solo las de esta página (en un sistema con tandas, las demás tandas se conservan)
+    tarjetas.forEach(function (t) { delete datos[t.dataset.id]; });
+    guardar(sis, datos);
     tarjetas.forEach(pintar); progreso(); filtrar();
   });
 
