@@ -558,6 +558,7 @@ details.guia-fuentes a { word-break: break-word; }
   background: var(--tarjeta); border: 1px solid var(--borde); border-radius: var(--radio); padding: 1rem; color: var(--texto); text-decoration: none; }
 .pr-sis .placa-logo { grid-row: 1 / span 3; width: 64px; }
 .pr-sis .placa-logo img { width: 64px; height: auto; }
+.pr-sis .placa-emoji { font-size: 2.4rem; line-height: 1; }
 .pr-sis-nombre { font-weight: 700; font-size: 1.1rem; }
 .pr-sis-cuenta { color: var(--texto-2); font-size: .92rem; }
 .pr-sis-hechas { color: var(--amarillo); font-size: .9rem; }
