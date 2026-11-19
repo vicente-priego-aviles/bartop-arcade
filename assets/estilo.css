@@ -554,7 +554,7 @@ details.guia-fuentes a { word-break: break-word; }
 .pr-estado button[aria-pressed="true"][data-e="mal"] { background: #7a1f29; border-color: var(--rojo); }
 .pr-estado button[aria-pressed="true"][data-e="luego"] { background: #3a4152; border-color: var(--texto-3); }
 .pr-nota { width: 100%; margin-top: .5rem; box-sizing: border-box; background: var(--fondo-2); color: var(--texto);
-  border: 1px solid var(--borde); border-radius: var(--radio-s); padding: .6rem; font: inherit; font-size: 16px; resize: vertical; }
+  border: 1px solid var(--borde); border-radius: var(--radio-s); padding: .6rem; font: inherit; font-size: 16px; resize: vertical; min-height: 8.5rem; }
 .pr-vacio { color: var(--texto-2); text-align: center; margin: 2rem 0; }
 .pr-barra { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; display: flex; gap: .5rem; justify-content: center;
   padding: .7rem max(.8rem, env(safe-area-inset-right)) calc(.7rem + env(safe-area-inset-bottom)) max(.8rem, env(safe-area-inset-left));
