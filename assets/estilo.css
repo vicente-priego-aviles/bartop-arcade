@@ -618,6 +618,6 @@ details.guia-fuentes a { word-break: break-word; }
 .ficha-dudas li { margin: .4rem 0; }
 
 /* Fecha de la última prueba en la bartop */
-.probado-el { display: inline-block; margin-top: 4px; font-size: .75rem; color: #7ee2a8; }
-.sin-probar + .probado-el { margin-left: 6px; }
-.dato-probado b { color: #7ee2a8; }
+/* «Probando»: probado alguna vez, con algo pendiente (naranja) */
+.probando { align-self: flex-start; margin-top: 4px; font-size: .7rem; font-weight: 700; color: #ff9f43; background: rgb(255 159 67 / .14); border: 1px solid rgb(255 159 67 / .7); border-radius: 999px; padding: 1px 8px; }
+.dato-probando .probando { margin-top: 0; font-size: .8rem; }
