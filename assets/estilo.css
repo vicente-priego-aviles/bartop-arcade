@@ -426,6 +426,21 @@ details.guia-fuentes a { word-break: break-word; }
 .tabla-guia td:first-child, .tabla-guia tbody th { white-space: nowrap; color: var(--texto); font-weight: 600; }
 .tabla-guia code { font-size: .85em; }
 .tabla-chips td:first-child, .tabla-chips tbody th { width: 1%; }
+/* Tablas de 3 o más columnas: en el móvil, cada fila es una tarjeta con la cabecera de cada dato */
+@media (max-width: 600px) {
+  .tabla-scroll:has(.tabla-tarjetas) { overflow: visible; border: 0; background: none; }
+  .tabla-tarjetas, .tabla-tarjetas tbody, .tabla-tarjetas tr, .tabla-tarjetas td { display: block; width: 100%; }
+  .tabla-tarjetas thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .tabla-tarjetas tbody tr { margin: 0 0 10px; border: 1px solid var(--borde); border-radius: var(--radio-s); background: var(--fondo-2); padding: 6px 0; }
+  .tabla-tarjetas tbody tr:nth-child(even) { background: var(--fondo-2); }
+  .tabla-tarjetas td { border-bottom: 0; padding: 4px 14px; white-space: normal !important; }
+  .tabla-tarjetas td:first-child { font-size: 1rem; padding-top: 8px; }
+  .tabla-tarjetas td:not(:first-child)::before {
+    content: attr(data-label); display: block; font: 600 .68rem/1.3 var(--sans); letter-spacing: .08em;
+    text-transform: uppercase; color: var(--texto-2); margin-bottom: 2px;
+  }
+  .tabla-tarjetas td:empty { display: none; }
+}
 .chips-celda { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip-nivel {
   display: inline-flex; align-items: center; gap: 8px; padding: 4px 6px 4px 11px; border-radius: 999px;
