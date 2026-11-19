@@ -546,6 +546,10 @@ details.guia-fuentes a { word-break: break-word; }
 .pr-botones summary { cursor: pointer; color: var(--azul); padding: .4rem 0; min-height: 40px; display: flex; align-items: center; }
 .pr-botones .tabla-controles { width: 100%; }
 .pr-botones .botones img { height: 32px; width: auto; }
+.pr-dudas { margin: .5rem 0; }
+.pr-dudas summary { cursor: pointer; color: var(--amarillo, #ffd166); padding: .4rem 0; min-height: 40px; display: flex; align-items: center; }
+.pr-dudas ul { margin: .2rem 0 .4rem; padding-left: 1.2rem; font-size: .95em; }
+.pr-dudas li { margin: .3rem 0; }
 .pr-ficha { display: inline-block; margin: .2rem 0 .4rem; color: var(--azul); }
 .pr-estado { display: grid; grid-template-columns: repeat(3, 1fr); gap: .4rem; margin-top: .6rem; }
 .pr-estado button { min-height: 48px; border-radius: var(--radio-s); border: 1px solid var(--borde); background: var(--tarjeta-2);
