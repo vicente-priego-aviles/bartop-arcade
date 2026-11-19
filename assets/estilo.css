@@ -596,6 +596,7 @@ details.guia-fuentes a { word-break: break-word; }
 .pr-sis-cuenta { color: var(--texto-2); font-size: .92rem; }
 .pr-sis-hechas { color: var(--amarillo); font-size: .9rem; }
 .pr-sis-verde { background: rgb(60 200 120 / .16); border-color: rgb(60 200 120 / .6); }
+.pr-sis-cerrada { cursor: default; pointer-events: none; user-select: none; }
 .pr-sis-amarillo { background: rgb(255 209 102 / .14); border-color: rgb(255 209 102 / .6); }
 .pr-sis-rojo { background: rgb(255 77 94 / .14); border-color: rgb(255 77 94 / .6); }
 .pr-sis-estado { margin-left: .4rem; font-size: .75rem; font-weight: 600; border-radius: 999px; padding: 1px 8px; vertical-align: middle; }
